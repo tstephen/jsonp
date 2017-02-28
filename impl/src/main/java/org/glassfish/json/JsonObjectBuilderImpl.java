@@ -247,7 +247,12 @@ class JsonObjectBuilderImpl implements JsonObjectBuilder {
 
         @Override
         public boolean isNull(String name) {
-            return get(name).equals(JsonValue.NULL);
+            try {
+                JsonValue prop = get(name);
+                return prop == null ? true : prop.equals(JsonValue.NULL);
+            } catch (Throwable t) {
+                return true;
+            }
         }
 
         @Override

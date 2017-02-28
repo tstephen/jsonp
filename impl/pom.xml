@@ -53,6 +53,7 @@
 
     <groupId>org.glassfish</groupId>
     <artifactId>javax.json</artifactId>
+    <version>1.0.4.20170227</version>
     <packaging>bundle</packaging>
     <name>JSR 353 (JSON Processing) Default Provider</name>
     <description>Default provider for JSR 353:Java API for Processing JSON</description>
